@@ -35,7 +35,7 @@ body {
   width: 43%;
   flex-basis: 43%;
   height: 80vh;
-  gap: 20px;
+  gap: 15px;
   padding: 20px;
   margin: 22px;
   flex-direction: column;
@@ -50,13 +50,12 @@ body {
 }
 
 .textInput {
-  width: 165px;
+  width: 160px;
   height: 30px;
   top: 24px;
   gap: 0px;
   opacity: 0px;
   border: rgb(232, 225, 225) solid;
-  
 }
 
 .passwordInput {
@@ -83,6 +82,17 @@ h2 {
   color: rgb(116, 112, 112);
   margin-left: 10px;
   
+}
+.labelText {
+  display: flex;
+  flex-direction: row;
+}
+form {
+  display: flex;
+}
+.form-group {
+  display: flex;
+  gap: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -225,6 +235,7 @@ text-align: left;
     margin-right: 50px;
     width: 91px;
     margin: auto;
+    
   }
   .loginBox {
     background-color: white;
@@ -240,12 +251,7 @@ text-align: left;
     box-shadow: 5px 5px rgb(230, 235, 240);
     margin: auto;
   }
-  .labelText {
-    display: flex;
-    flex-direction: column-reverse;
+  .form-group{
+    flex-wrap: wrap;
   }
-  table-layout: .labelText {
-    display: flex;
-    flex-direction: column;
-  };
 }
