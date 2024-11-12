@@ -9,12 +9,13 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(218, 215, 215);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
   display: flex;
-  width: 850px;
+  max-width: 850px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
@@ -32,9 +33,10 @@ body {
 .loginBox {
   background-color: white;
   display: flex;
-  width: 43%;
+  max-width: 370px;
+  width: 100%;
   flex-basis: 43%;
-  height: 80vh;
+  /* height: 80vh; */
   gap: 15px;
   padding: 20px;
   margin: 22px;
@@ -217,15 +219,17 @@ text-align: left;
   body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
   }
   .container {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    /* max-width: 350px; */
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 50px;
     margin-right: 250px;
     margin: auto;
@@ -233,25 +237,52 @@ text-align: left;
   .forIndividuals {
     padding-bottom: 2px;
     margin-right: 50px;
-    width: 91px;
+    max-width: 150px;
+    width: 100%;
     margin: auto;
-    
   }
   .loginBox {
     background-color: white;
     display: flex;
-    width: 92%;
-    flex-basis: 43%;
-    height: 80vh;
-    gap: 20px;
+    /* width: 92%; */
+    /* width: 100%; */
+    flex-basis: 45%;
+    min-height: 100vh;
+    gap: 5px;
     padding: 7px;
     margin: auto;
     /* flex-direction: column; */
-    line-height: 0.9;
+    /* line-height: 0.9; */
     box-shadow: 5px 5px rgb(230, 235, 240);
     margin: auto;
   }
   .form-group{
     flex-wrap: wrap;
+  }
+  .form-group {
+    display: flex;
+    gap: 15px;
+  }
+  h2 {
+    display: none;
+  }
+  .passwordInput {
+    max-width: 120px;
+    /* height: 30px; */
+    top: 24px;
+    gap: 0px;
+    opacity: 0px;
+    border: rgb(232, 225, 225) solid;
+  }
+  .textInput {
+    max-width: 270px;
+    /* height: 30px; */
+    top: 24px;
+    gap: 0px;
+    opacity: 0px;
+    border: rgb(232, 225, 225) solid;
+  }
+  form {
+    display: flex;
   }
 }
