@@ -60,8 +60,9 @@ body {
   height: 40px;
   border: rgb(232, 225, 225) solid;
   padding: 5px;
-  font-size: 14px;
+  font-size: 10px;
   margin-bottom: 10px;
+  border-radius: 8px;
 }
 
 .texts {
@@ -70,6 +71,10 @@ body {
   font-weight: 500;
   line-height: 16px;
   text-align: left;
+}
+.conditions {
+  text-decoration: none;
+  color: #2EC4B6;;
 }
 
 h2 {
@@ -91,12 +96,11 @@ form {
 .form-group {
   display: flex;
   gap: 20px;
-  /* flex-wrap: wrap; */
 }
 
-.signupInput {
-  display: flex;
-  flex-direction: column;
+.buttonDiv button{
+  background: #2EC4B6;
+  color: white;
 }
 
 /* Media Queries */
