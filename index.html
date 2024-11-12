@@ -3,83 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign Up | Individual</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="signUp">
-      <h2>Sign Up | Individual</h2>
-      <div class="container">
-        <div class="individualBox">
-          <img
-            class="forIndividuals"
-            width="380px"
-            src="./assets/Group 9.png"
-            alt=""
-          />
+    <main>
+      <form action="signUp" method="POST">
+        <h2>Sign Up | Individual</h2>
+        <div class="container">
+          <div class="individualBox">
+            <img
+              class="forIndividuals"
+              width="380px"
+              src="./assets/Group 9.png"
+              alt="Individual sign-up image"
+            />
+          </div>
+          <div class="loginBox">
+            <div class="form-group">
+              <div class="signupInput">
+                <label for="firstName" class="labelText">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="textInput" placeholder="Enter First Name" required />
+              </div>
+              <div class="signupInput">
+                <label for="lastName" class="labelText">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="textInput" placeholder="Enter Last Name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="signupInput">
+                <label for="gender" class="labelText">Gender</label>
+                <select name="gender" id="gender" class="textInput" required>
+                  <option value="" disabled selected>Select your gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="signupInput">
+                <label for="dob" class="labelText">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="textInput" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="signupInput">
+                <label for="weight" class="labelText">Weight (kg)</label>
+                <input type="number" id="weight" name="weight" class="textInput" required />
+              </div>
+
+              <div class="signupInput">
+                <label for="height" class="labelText">Height (cm)</label>
+                <input type="number" id="height" name="height" class="textInput" required />
+              </div>
+            </div>
+
+            <div class="activity">
+              <label for="activity" class="words">Activity Level</label>
+              <input type="text" id="activity" name="activity" class="passwordInput" required />
+            </div>
+
+            <div class="password">
+              <label for="password" class="words">Password</label>
+              <input type="password" id="password" name="password" class="passwordInput" required />
+            </div>
+
+            <div class="buttonDiv">
+              <button type="submit" class="passwordInput">Register</button>
+            </div>
+
+            <footer>
+              <p class="texts">
+                By clicking Register, you agree to our
+                <a href="#">Terms of use</a> and our
+                <a href="#">Privacy Policy</a>
+              </p>
+            </footer>
+          </div>
         </div>
-        <div class="loginBox">
-          <div class="form-group">
-            <div class="signupInput">
-              <label for="text" class="labelText">First Name</label>
-              <input type="text" class="textInput" />
-            </div>
-            <div class="signupInput">
-              <label for="text" class="labelText">Last Name</label>
-              <input type="text" class="textInput" />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="signupInput">
-              <label for="text" class="labelText">Gender</label>
-              <select name="text" id="gender" class="textInput">
-                <option value="select"></option>
-                <option value="select">Male</option>
-                <option value="select">Female</option>
-                <option value="select">Others</option>
-              </select>
-            </div>
-
-            <div class="signupInput">
-              <label for="text" class="labelText">Date of Birth</label>
-              <input type="date" class="textInput" />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="signupInput">
-              <label for="text" class="labelText">Weight</label>
-              <input type="text" class="textInput" />
-            </div>
-
-            <div class="signupInput">
-              <label for="text" class="labelText">Height</label>
-              <input type="text" class="textInput" />
-            </div>
-          </div>
-
-          <div class="activity">
-            <label for="text" class="words">Activity</label>
-            <input type="text" class="passwordInput" />
-          </div>
-
-          <div class="password">
-            <label for="text" class="words">Password</label>
-            <input type="password" class="passwordInput" />
-          </div>
-
-          <div class="buttonDiv">
-            <button class="passwordInput">Register</button>
-          </div>
-          <footer>
-            <p class="texts">
-              By clicking Register, you agree to our
-              <a href="">Terms of use</a> and our <a href="">Privacy Policy</a>
-            </p>
-          </footer>
-        </div>
-      </div>
-    </form>
+      </form>
+    </main>
   </body>
 </html>
